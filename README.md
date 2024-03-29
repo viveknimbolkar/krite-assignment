@@ -1,5 +1,7 @@
 # K-Rite Assessment
 
+**Deployment** - https://master.d2h2itos1qqd2m.amplifyapp.com/
+
 ## Dependency used
 
 - Ant Design
