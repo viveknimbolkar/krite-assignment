@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Flex } from "antd";
+import { lazy } from "react";
+
+const Sidebar = lazy(() => import("./components/Sidebar"));
+const Dashboard = lazy(() => import("./components/Dashboard"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Flex gap={10} className="h-screen md:p-4 p-2 md:flex-row flex-col ">
+      <Sidebar />
+      <Dashboard />
+    </Flex>
   );
 }
 
